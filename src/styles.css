@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Tema de fondo elaborado */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: 
+                url('https://media.istockphoto.com/id/1096860416/es/foto/trabajar-con-nosotros-formas-de-impuesto-contable.jpg?s=2048x2048&w=is&k=20&c=gtNnwJiRVyzcSSn7a0QDomNFbFrsAG5eB1CoxJebgJs=');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Opcional: si deseas que el contenido se centre verticalmente */
+
+

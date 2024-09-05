@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Calculadora de Impuestos</h1>
+  <p>Calcula tus impuestos y descubre tu ingreso neto aproximado.</p>
+
+  <main>
+    <form (ngSubmit)="calculateTax()">
+      <div class="input-group">
+        <label for="income">Define tu ingreso Bruto:</label>
+        <input type="number" [(ngModel)]="income" name="income" id="income" required>
+        <select [(ngModel)]="period" name="period" id="period">
+          <option value="monthly">Mensual</option>
+          <option value="annual">Anual</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="taxType">Tipo de Impuesto:</label>
+        <select [(ngModel)]="taxType" name="taxType" id="taxType">
+          <option value="irpf">IRPF</option>
+          <option value="sociedades">Impuesto de Sociedades</option>
+          <option value="autonomos">Autónomos</option>
+        </select>
+      </div>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div *ngIf="grossIncome !== null" class="results">
+      <h2>Resultados:</h2>
+      <p>Ingreso Bruto: <span>{{ grossIncome | currency:'EUR' }}</span></p>
+      <p>Impuesto: <span>{{ taxAmount | currency:'EUR' }}</span></p>
+      <p>Ingreso Neto: <span>{{ netIncome | currency:'EUR' }}</span></p>
+    </div>
+  </main>
+</div>
+
+
+  
+
+
+
+
