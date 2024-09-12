@@ -7,8 +7,8 @@
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 10%; /* Alineado con el login */
-    margin-bottom: 10%; /* Añade margen inferior para balance */
+    margin-top: 10%; 
+    margin-bottom: 10%; 
 }
 
 h1 {
@@ -18,7 +18,7 @@ h1 {
     color: #333;
 }
 
-/* Form styles */
+/* Estilos formulario */
 form {
     margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@ input:focus {
     outline: none;
 }
 
-/* Button styles */
+/* Estilos del boton */
 button {
     width: 100%;
     padding: 12px;
@@ -70,7 +70,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Login link styles */
+/* Estilos login link  */
 .login-link {
     font-size: 1rem;
     margin-top: 20px;

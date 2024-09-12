@@ -1,4 +1,4 @@
-/* General container styles */
+
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -7,7 +7,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 10%; /* Aumenta el margen superior */
+    margin-top: 10%; 
     margin-bottom: 9.7%; /* Añade margen inferior para separación */
 }
 
@@ -18,7 +18,7 @@ h1 {
     color: #333;
 }
 
-/* Form styles */
+/* Estilos formulario */
 form {
     margin-bottom: 20px;
 }
@@ -51,7 +51,7 @@ input:focus {
     outline: none;
 }
 
-/* Button styles */
+
 button {
     width: 100%;
     padding: 12px;
@@ -70,7 +70,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Register link styles */
+/* Registro styles */
 .register-link {
     font-size: 1rem;
     margin-top: 20px;
