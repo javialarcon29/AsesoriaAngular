@@ -1,4 +1,3 @@
-
 .login-container {
     max-width: 400px;
     margin: 0 auto;
@@ -85,4 +84,25 @@ button:hover {
 
 .register-link a:hover {
     text-decoration: underline;
+}
+
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 20px; /* Reduce el padding en móviles */
+        margin-top: 5%; /* Ajusta el margen superior */
+        margin-bottom: 5%; /* Ajusta el margen inferior */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de fuente en móviles */
+    }
+
+    button {
+        font-size: 1rem; /* Reduce el tamaño de fuente del botón */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Ajusta el margen en móviles */
+    }
 }

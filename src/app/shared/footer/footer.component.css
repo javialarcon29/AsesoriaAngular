@@ -33,19 +33,10 @@
 /* Estilos responsive para móviles */
 @media (max-width: 768px) {
   .main-footer {
-    padding: 15px;
-  }
-
-  .footer-content {
-    padding: 0 10px;
-  }
-
-  .footer-links {
-    text-align: center;
+    padding: 15px; /* Ajusta el padding en móviles */
   }
 
   .footer-links li {
-    display: block;
-    margin: 10px 0;
+    margin: 5px 0; /* Reduce el margen entre enlaces */
   }
 }
