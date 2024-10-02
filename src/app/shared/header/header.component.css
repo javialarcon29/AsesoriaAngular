@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,14 +7,14 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1000; 
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #2c3e50;
     color: rgb(255, 255, 255);
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 .logo img {
@@ -55,4 +56,67 @@ nav ul li a:hover {
 nav ul li img {
     width: 50px;
     height: auto;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (tablets y teléfonos pequeños) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        flex-wrap: wrap;  /* Permitir que los elementos se acomoden en varias líneas si es necesario */
+    }
+
+    .logo img {
+        width: 48px;  /* Reducir el tamaño del logo en pantallas pequeñas */
+        height: 48px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;  /* Permitir que los elementos del menú se acomoden en varias líneas si no hay espacio */
+    }
+
+    nav ul li {
+        margin-left: 15px;  /* Reducir el margen entre elementos */
+    }
+
+    nav ul li a {
+        font-size: 18px;  /* Reducir tamaño de fuente en pantallas pequeñas */
+    }
+
+    nav ul li img {
+        width: 40px;  /* Reducir el tamaño del icono de login */
+    }
+}
+
+/* Pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 40px;  /* Ajustar aún más el tamaño del logo */
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: row;  /* Mantener el menú horizontal */
+        flex-wrap: wrap;  /* Permitir que los elementos pasen a la siguiente línea si es necesario */
+        justify-content: center;  /* Centrar los elementos si se envuelven */
+    }
+
+    nav ul li {
+        margin-left: 10px;  /* Reducir aún más el margen entre elementos */
+        margin-bottom: 5px;  /* Añadir margen inferior para más separación si se envuelven */
+    }
+
+    nav ul li a {
+        font-size: 16px;  /* Reducir el tamaño de fuente para pantallas muy pequeñas */
+    }
+
+    nav ul li img {
+        width: 36px;  /* Ajustar el tamaño del icono de login */
+    }
 }

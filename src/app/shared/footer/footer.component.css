@@ -29,3 +29,23 @@
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+
+  .footer-links li {
+    display: block;
+    margin: 10px 0;
+  }
+}
